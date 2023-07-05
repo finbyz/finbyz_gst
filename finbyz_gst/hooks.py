@@ -199,3 +199,23 @@ app_license = "MIT"
 # auth_hooks = [
 #	"finbyz_gst.auth.validate"
 # ]
+
+from india_compliance.gst_india.api_classes.e_invoice import EInvoiceAPI
+from finbyz_gst.api import einvoice_setup
+EInvoiceAPI.setup = einvoice_setup
+
+from india_compliance.gst_india.api_classes.e_waybill import EWaybillAPI
+from finbyz_gst.api import ewaybill_setup
+EWaybillAPI.setup = ewaybill_setup
+
+from india_compliance.gst_india.api_classes.base import BaseAPI
+from finbyz_gst.api import get_url
+BaseAPI.get_url = get_url
+
+from india_compliance.gst_india.api_classes.public import PublicAPI
+from finbyz_gst.api import get_gstin_info
+PublicAPI.get_gstin_info = get_gstin_info 
+
+from india_compliance.gst_india.utils.transaction_data import GSTTransactionData
+from finbyz_gst.api import update_transaction_tax_details as new_update_transaction_tax_details
+GSTTransactionData.update_transaction_tax_details = new_update_transaction_tax_details
