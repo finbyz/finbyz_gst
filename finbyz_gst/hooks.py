@@ -139,9 +139,9 @@ app_license = "MIT"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "finbyz_gst.event.get_events"
-# }
+override_whitelisted_methods = {
+	"india_compliance.gst_india.utils.e_invoice.generate_e_invoice" : "finbyzerp.e_invoice_override_14.custom_generate_e_invoice"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
