@@ -4,6 +4,7 @@ import frappe
 import base64
 import os
 import jwt
+from frappe import _
 from pyqrcode import create as qrcreate
 from frappe.integrations.utils import make_request
 from frappe.utils.data import time_diff_in_seconds
