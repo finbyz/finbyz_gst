@@ -140,7 +140,7 @@ app_license = "MIT"
 # ------------------------------
 #
 override_whitelisted_methods = {
-	"india_compliance.gst_india.utils.e_invoice.generate_e_invoice" : "finbyzerp.e_invoice_override_14.custom_generate_e_invoice"
+	"india_compliance.gst_india.utils.e_invoice.generate_e_invoice" : "finbyz_gst.api.custom_generate_e_invoice"
 }
 #
 # each overriding function accepts a `data` argument;
