@@ -215,3 +215,7 @@ BaseAPI.get_url = get_url
 from india_compliance.gst_india.api_classes.public import PublicAPI
 from finbyz_gst.api import get_gstin_info
 PublicAPI.get_gstin_info = get_gstin_info 
+
+from india_compliance.gst_india.utils.transaction_data import GSTTransactionData
+from finbyz_gst.api import update_transaction_tax_details as custom_update_transaction_tax_details
+GSTTransactionData.update_transaction_tax_details = custom_update_transaction_tax_details
